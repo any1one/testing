@@ -28,7 +28,7 @@ This parameter allows you to configure how many threads you want xel_miner to ru
 
 The next parameter we want to look at is the URL configuration:
 
-``` 
+```
 -o, --url=URL   URL of mining server
 ```
 
@@ -58,11 +58,11 @@ If you prefer using one of the public nodes, feel free to use one of the balance
 
 When there is no work on the network, you should see something like this:
 
-![miner_1](/content/images/2018/07/miner_1.png)
+![miner_1](miner_1.png)
 
 If this is the case, you should maybe work through one of the other tutorials and post some work to the Blockchain. If you have done so, you should see the miner pick up on your work pretty quickly:
 
-![miner_2](/content/images/2018/07/miner_2.png)
+![miner_2](miner_2.png)
 
 The first line means that the maximum number of allowed POWs for this block has already been reached in the unconfirmed transaction cache and there is no need to submit more until the next block arrives. We already know that the retargeting algorithm tries to calibrate the target value so that 10 proof-of-work submissions (on average) are found per minute. This is not per task but for all tasks in the network together. However, as a DOS precaution, there is a hard cap of 25 proof-of-work submissions per block. Once that number is reached, no more proof-of-work submissions are accepted until the next block is found.
 
